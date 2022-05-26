@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #19b6d9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.left-side {
+    display: inline-flex;
+    text-indent: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.left-side i {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.left-side a {
+    text-decoration: none;
+    color: white;
+}
+
+.left-side ul li {
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+}
+
+.left-side ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 2px;
+    background-color: white;
+    transform-origin: top right;
+    transition: transform 0.25s ease-out;
+}
+
+.left-side ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.right-side {
+    position: relative;
+    right: 2%;
+    margin-top: -2px;
+}
+
+.right-side input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    padding: 4px 8px 5px;
+    margin-right: 10px;
+
+}
+
+.right-side input:focus {
+    outline: none;
+    margin-left: 10px;
+}
+
+.right-side #phone {
+    /* background: 0 0; */
+    border: 2px solid #fff;
+    padding: 4px 8px 5px;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: white;
+    text-indent: 5px;
+    margin-left: -5px;
+}
+
+.right-side #phone:hover {
+    background-color: #ff5745;
+    border-color: #ff5745;
+}
+
+.right-side #join {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.line {
+    margin-top: 20px;
+    color: black;
+    opacity: 0.4;
+}
+.middle{
+    color: white;
+    text-align: center;
+    margin-top: 18%;
+    font-size: 20px;
+}
+.course-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.ca{
+    display: inline-block;
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.top-icons{
+    display: inline-flex;
+    padding: 10px 20px;
+}
+.top-icons h3{
+    position: relative;
+    top: -3px;
+    left: 28px;
+}
+.course-count{
+    display: inline-flex;
+    padding: 10px 15px;
+    text-align: center;
+}
+.ca #text{
+    text-align: center;
+}
+.count-2{
+   margin-left: 25px;
+}
